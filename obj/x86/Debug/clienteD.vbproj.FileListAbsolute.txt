@@ -1,0 +1,19 @@
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\bin\Debug\clienteD.exe
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\bin\Debug\clienteD.pdb
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\bin\Debug\clienteD.xml
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\obj\x86\Debug\clienteD.Resources.resources
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\obj\x86\Debug\clienteD.vbproj.GenerateResource.Cache
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\obj\x86\Debug\clienteD.exe
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\obj\x86\Debug\clienteD.xml
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\obj\x86\Debug\clienteD.pdb
+C:\Users\Robin\AppData\Local\Temporary Projects\clienteD\obj\x86\Debug\clienteD.Form1.resources
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.exe
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.xml
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.pdb
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\bin\Debug\clienteD.exe
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\bin\Debug\clienteD.pdb
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\bin\Debug\clienteD.xml
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.Form1.resources
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.Resources.resources
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.vbproj.GenerateResource.Cache
+C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\bin\Debug\clienteD.exe.config
