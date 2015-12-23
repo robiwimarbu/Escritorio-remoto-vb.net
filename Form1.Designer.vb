@@ -65,9 +65,9 @@ Partial Class Form1
         '
         'btnConectar
         '
-        Me.btnConectar.Location = New System.Drawing.Point(243, 6)
+        Me.btnConectar.Location = New System.Drawing.Point(234, 6)
         Me.btnConectar.Name = "btnConectar"
-        Me.btnConectar.Size = New System.Drawing.Size(75, 23)
+        Me.btnConectar.Size = New System.Drawing.Size(83, 23)
         Me.btnConectar.TabIndex = 4
         Me.btnConectar.Text = "conectar"
         Me.btnConectar.UseVisualStyleBackColor = True
@@ -82,11 +82,11 @@ Partial Class Form1
         '
         'btnEnviarMensaje
         '
-        Me.btnEnviarMensaje.Location = New System.Drawing.Point(333, 6)
+        Me.btnEnviarMensaje.Location = New System.Drawing.Point(324, 6)
         Me.btnEnviarMensaje.Name = "btnEnviarMensaje"
-        Me.btnEnviarMensaje.Size = New System.Drawing.Size(75, 23)
+        Me.btnEnviarMensaje.Size = New System.Drawing.Size(115, 23)
         Me.btnEnviarMensaje.TabIndex = 7
-        Me.btnEnviarMensaje.Text = "enviar"
+        Me.btnEnviarMensaje.Text = "Controlar PC remoto"
         Me.btnEnviarMensaje.UseVisualStyleBackColor = True
         '
         'Label1
@@ -100,9 +100,9 @@ Partial Class Form1
         '
         'txtDummyContent
         '
-        Me.txtDummyContent.Location = New System.Drawing.Point(446, 6)
+        Me.txtDummyContent.Location = New System.Drawing.Point(648, 6)
         Me.txtDummyContent.Name = "txtDummyContent"
-        Me.txtDummyContent.Size = New System.Drawing.Size(235, 20)
+        Me.txtDummyContent.Size = New System.Drawing.Size(33, 20)
         Me.txtDummyContent.TabIndex = 9
         '
         'Form1
