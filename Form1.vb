@@ -1,4 +1,5 @@
-﻿Imports System.Runtime.Serialization.Formatters.Binary
+﻿Imports System.IO
+Imports System.Runtime.Serialization.Formatters.Binary
 Public Class Form1
     Dim pressExec As Boolean = False
     Dim flagSend As Boolean = False
@@ -49,40 +50,6 @@ Public Class Form1
         End
     End Sub
 
-    Private Sub PictureBox1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox1.MouseClick
-        If flagSend Then
-            Dim data As New mData
-            data.xPosition = e.Location.X
-            data.yPosition = e.Location.Y
-            data.eMouseEvent = e.Button.ToString
-            WinSockCliente.sendData(data)
-            Debug.Print("Click " & e.Button.ToString)
-        End If
-    End Sub
-
-    Private Sub PictureBox1_MouseDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox1.MouseDoubleClick
-        If flagSend Then
-            Dim stateButton As String = "None"
-            Dim data As New mData
-            data.xPosition = e.Location.X
-            data.yPosition = e.Location.Y
-            stateButton = "DClick"
-            data.eMouseEvent = stateButton
-            WinSockCliente.sendData(data)
-            data.eMouseEvent = "None"
-        End If
-    End Sub
-    Private Sub PictureBox1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox1.MouseMove
-        Dim stateButton As String = "None"
-        If flagSend Then
-            Dim data As New mData
-            data.xPosition = e.Location.X
-            data.yPosition = e.Location.Y
-            stateButton = e.Button.ToString
-            data.eMouseEvent = stateButton
-            WinSockCliente.sendData(data)
-        End If
-    End Sub
 
     Private Sub Form1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles MyBase.KeyPress
         Dim stateButton As String = "None"
@@ -142,7 +109,79 @@ Public Class Form1
             Else
                 Return
             End If
-            
+
         End If
+    End Sub
+
+
+    Private Sub PictureBox1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox1.MouseClick
+        If flagSend Then
+            Dim data As New mData
+            data.xPosition = e.Location.X
+            data.yPosition = e.Location.Y
+            data.eMouseEvent = e.Button.ToString
+            WinSockCliente.sendData(data)
+            Debug.Print("Click " & e.Button.ToString)
+        End If
+    End Sub
+
+    Private Sub PictureBox1_MouseDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox1.MouseDoubleClick
+        If flagSend Then
+            Dim stateButton As String = "None"
+            Dim data As New mData
+            data.xPosition = e.Location.X
+            data.yPosition = e.Location.Y
+            stateButton = "DClick"
+            data.eMouseEvent = stateButton
+            WinSockCliente.sendData(data)
+            data.eMouseEvent = "None"
+        End If
+    End Sub
+
+    Private Sub PictureBox1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox1.MouseMove
+        Dim stateButton As String = "None"
+        If flagSend Then
+            Dim data As New mData
+            data.xPosition = e.Location.X
+            data.yPosition = e.Location.Y
+            stateButton = e.Button.ToString
+            data.eMouseEvent = stateButton
+            WinSockCliente.sendData(data)
+        End If
+    End Sub
+
+    Private Sub PictureBox1_DragDrop(ByVal sender As Object, ByVal e As DragEventArgs) Handles MyBase.DragEnter
+        Debug.Print("DragENTER " & e.Data.GetDataPresent(DataFormats.FileDrop))
+        If (e.Data.GetDataPresent(DataFormats.FileDrop)) Then
+            Dim filePaths As String() = CType(e.Data.GetData(DataFormats.FileDrop), String())
+            'Procesar el file para ser enviado
+            If filePaths.Length = 1 Then
+                Dim fileLoc As String = filePaths(0)
+                If File.Exists(fileLoc) Then
+                    Dim data As New mData
+                    data.eMouseEvent = "DragDrop"
+                    data.fileName = fileLoc
+                    Dim stringData As String = ""
+                    Using tr As TextReader = New StreamReader(fileLoc)
+                        stringData = tr.ReadToEnd()
+                    End Using
+                    data.stringData = stringData
+                    WinSockCliente.sendData(data)
+                    Debug.Print(data.stringData)
+                End If
+
+            Else
+                MessageBox.Show("Solo archivos por favor")
+            End If
+            ' Display the copy cursor.
+            e.Effect = DragDropEffects.Copy
+        Else
+            ' Display the no-drop cursor.
+            e.Effect = DragDropEffects.None
+        End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AllowDrop = True
     End Sub
 End Class

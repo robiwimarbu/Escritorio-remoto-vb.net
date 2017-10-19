@@ -17,3 +17,14 @@ C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\D
 C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.Resources.resources
 C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\obj\x86\Debug\clienteD.vbproj.GenerateResource.Cache
 C:\Users\Robin\Documents\Visual Studio 2010\Projects\clienteD\clienteD\bin\Debug\clienteD.exe.config
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\bin\Debug\clienteD.exe.config
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\bin\Debug\clienteD.exe
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\bin\Debug\clienteD.pdb
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\bin\Debug\clienteD.xml
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.vbprojResolveAssemblyReference.cache
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.Form1.resources
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.Resources.resources
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.vbproj.GenerateResource.Cache
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.exe
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.xml
+C:\Users\robin.valencia\Source\Repos\Escritorio-remoto-vb.net\obj\x86\Debug\clienteD.pdb

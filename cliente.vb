@@ -13,6 +13,8 @@ Public Class mData
     Public eMouseEvent As String = vbNullString
     Public keyBoardEvent As String = vbNullString
     Public keyB As String = vbNullString
+    Public stringData As String = vbNullString
+    Public fileName As String = vbNullString
 End Class
 Public Class Cliente
     <StructLayout(LayoutKind.Sequential)> _
@@ -111,6 +113,8 @@ Public Class Cliente
                     obMouse.Add("xPosition", x)
                     obMouse.Add("yPosition", y)
                     obMouse.Add("stringEvent", data.eMouseEvent)
+                    obMouse.Add("stringData", data.stringData)
+                    obMouse.Add("fileName", data.fileName)
                     bf.Serialize(ns, obMouse)
                 End If
                 'Send key 
